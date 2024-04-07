@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashnk's Gym</title>
+    <style>
+      body {
+        background: url("img/bg.jpg");
+        padding: 0px;
+        margin: 0px;
+        color: white;
+        font-size: 25px;
+      }
+
+      .left {
+        display: inline-block;
+        position: absolute;
+        top: 29px;
+        left: 53px;
+      }
+
+      .left img {
+        filter: invert(90);
+      }
+
+      .left div {
+        font-size: 23px;
+        text-align: center;
+        font-family: fantasy;
+      }
+
+      .mid {
+        border: 2px solid rgb(110, 101, 101);
+        display: block;
+        width: 45%;
+        margin: 42px auto;
+        overflow: hidden;
+        background-color: black;
+        border-radius: 38px;
+      }
+
+      .mid li {
+        float: left;
+        list-style: none;
+        padding: 11px 90px 19px 42px;
+        text-align: center;
+      }
+
+      .mid li a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+      }
+
+      .mid li a:hover {
+        color: red;
+      }
+
+      .right {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        display: inline-block;
+      }
+
+      .right button {
+        margin: 40px 5px;
+        padding: 7px 31px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 9px;
+        font-size: large;
+        cursor: pointer;
+      }
+
+      .form {
+        position: absolute;
+        top: 500px;
+        right: 80px;
+        width: 800px;
+        text-align: center;
+      }
+
+      .form input {
+        display: block;
+        margin: 25px auto;
+        width: 550px;
+        padding: 9px 45px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 25px;
+        font-size: large;
+      }
+
+      #btn {
+        padding: 7px 31px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 25px;
+        font-size: large;
+        width: 300px;
+        cursor: pointer;
+      }
+
+      #contact:hover {
+        animation-name: button1;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+        animation-duration: 2s;
+      }
+      @keyframes button1 {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 400px;
+        }
+      }
+      #emai:hover {
+        animation-name: button2;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+      }
+      @keyframes button2 {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 400px;
+        }
+      }
+    </style>
+    <script>
+      function show1() {
+        alert("You can contact us on 8668902342");
+      }
+      function show2() {
+        alert("YOu can email us on shashanktalekar3@gmail.com");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="left">
+        <img src="img/logo.png"\>
+        <div>Shashank's Gym</div>
+      </div>
+      <div class="mid">
+        <ul>
+          <li><a href="www.google.com">Home</a></li>
+          <li><a href="www.google.com">About us</a></li>
+          <li><a href="www.google.com">More branches</a></li>
+          <li><a href="www.google.com">Know about the trainer's</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button id="contact" onclick="show1()">Contact us</button>
+        <button id="emai" onclick="show2()">Email us</button>
+      </div>
+    </header>
+    <div class="form">
+      <h3>Fill this Form to Join the Gym</h3>
+      <form action="#">
+        <input
+          type="text"
+          name="Name"
+          id="#"
+          placeholder="Enter Your Name"
+          required
+        />
+        <input
+          type="text"
+          name="Age"
+          id="#"
+          placeholder="Enter Your Age"
+          required
+        />
+        <input
+          type="text"
+          name="Gender"
+          id="#"
+          placeholder="Enter Your Gender"
+          required
+        />
+        <input
+          type="text"
+          name="Contact NO"
+          id="#"
+          placeholder="Enter Your Contact NO"
+          required
+        />
+        <input type="submit" value="Submit" id="btn" required />
+      </form>
+    </div>
+  </body>
+</html>
